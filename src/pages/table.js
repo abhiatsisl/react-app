@@ -22,7 +22,7 @@ class List extends React.Component {
     }
     componentDidMount() {
         this.setState({ isLoading: true })
-        let api_url = 'http://express-demo-account.herokuapp.com/users';
+        let api_url = 'https://express-demo-account.herokuapp.com/users';
         fetch(api_url)
             .then(res => {
                 // Unfortunately, fetch doesn't send (404 error) into the cache itself
